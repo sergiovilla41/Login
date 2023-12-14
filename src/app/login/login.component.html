@@ -1,0 +1,32 @@
+<body>
+  <img id="Fondo" src="assets/Registro/Fondo.jpg" alt="">
+
+</body>
+
+<div class="registro-container">
+  <img id="img" src="assets/mas_campo_logo.png" class="imagen-pequeña">
+  <h2>Registro de Usuario
+
+      </h2>
+
+  <form>
+    <label for="usuario">Usuario:</label>
+    <input type="text" id="usuario" formControlName="usuario">
+
+    <label for="contraseña">Contraseña:</label>
+    <input type="password" id="contraseña" formControlName="contraseña">
+
+    <button type="submit">Registrar</button>
+    <div class="or-line"></div>
+  </form>
+
+  <button id="Google" (click)="login()" class="google-login-button">
+    <img src="assets/Registro/google.png" alt="Google Icon" class="google-icon">
+    Iniciar sesión con Google
+  </button>
+
+  <button id="facebook"  (click)="signInWithFB()" class="facebook-login-button2">
+    <img src="assets/Registro/facebook.png" alt="Facebook Icon" class="facebook-icon">
+    Iniciar sesión con Facebook
+  </button>
+
